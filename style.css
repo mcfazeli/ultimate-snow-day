@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #e0f7fa;
+    font-family: 'Arial', sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#player {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 60px;
+    transform: translate(-50%, -50%);
+    transition: left 0.1s linear, top 0.1s linear;
+}
+
+.obstacle {
+    position: absolute;
+    font-size: 50px;
+    top: -60px;
+}
+
+#snowman {
+    display: none;
+    position: absolute;
+    font-size: 70px;
+    z-index: 5;
+    /* Above trees, below UI */
+    transition: left 0.1s linear, top 0.1s linear;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #006064;
+    z-index: 10;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+}
+
+button {
+    background: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0097a7;
+}
